@@ -7,7 +7,7 @@ const {
 
 test("American Express card pattern", () => {
   expect(isValidAmExCard("12345")).toBe(false);
-  expect(isValidAmExCard("378282246310005")).toBe(true);
+  expect(isValidAmExCard("_____378282246310005")).toBe(true);
 });
 
 test("Diner's Club card pattern", () => {
