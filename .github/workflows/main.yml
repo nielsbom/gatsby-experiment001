@@ -9,14 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: npm install
+        run: npm install
       - name: build
         run: gatsby build
   deploy:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: npm install
-        run: npm install        
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.1
         with:
