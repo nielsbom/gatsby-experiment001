@@ -1,4 +1,4 @@
-name: CI
+name: build and deploy to Netlify
 
 on:
   push:
