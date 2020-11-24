@@ -1,5 +1,12 @@
-import React from "react"
+import React from "react";
+import Button from "./Button";
 
 export default function Home() {
-  return <div>Hello world!</div>
+  const result = (
+    <div>
+      Hello world!
+      <Button />
+    </div>
+  );
+  return result;
 }
