@@ -9,11 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: npm install
+      - name: install dependencies
         run: npm install
       - name: build
         run: npm run build
-      - name: Deploy to Netlify
+      - name: deploy to netlify
         uses: nwtgck/actions-netlify@v1.1
         with:
           publish-dir: './public'
