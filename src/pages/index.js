@@ -4,7 +4,7 @@ import Button from "./Button";
 export default function Home() {
   const result = (
     <div>
-      Hello world!
+      Hello world! (this is staging!)
       <Button />
     </div>
   );
